@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEON RUN — La noche no tiene destino</title>
+  <meta name="description" content="NEON RUN: rutas nocturnas, sonidos infinitos. Una experiencia de conducción nocturna con banda sonora synthwave." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===== Navegación ===== -->
+  <header class="topbar">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio">
+        <svg class="brand__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M12 2 L22 12 L12 22 L2 12 Z" fill="none" stroke="currentColor" stroke-width="1.6" />
+          <circle cx="12" cy="12" r="3.2" fill="currentColor" />
+        </svg>
+        <span class="brand__name">Neon Run</span>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="visually-hidden">Abrir menú</span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav__menu" id="menu-principal">
+        <ul class="nav__links">
+          <li><a href="#experiencia">La experiencia</a></li>
+          <li><a href="#rutas">Rutas</a></li>
+          <li><a href="#frecuencia">La frecuencia</a></li>
+        </ul>
+        <button class="btn btn--ghost btn--small" type="button" data-modal-open>Acceso anticipado</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <video class="hero__video" autoplay loop muted playsinline preload="auto"
+             poster="videoframe_9583.jpg" aria-hidden="true" tabindex="-1">
+        <source src="fondo-nocturno.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__shade" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <p class="hero__eyebrow reveal d1">Rutas nocturnas · Sonidos infinitos</p>
+
+        <h1 class="hero__title" id="hero-titulo">
+          <span class="reveal d2">La noche</span>
+          <span class="reveal d3">no tiene</span>
+          <span class="hero__title-accent reveal d4">destino.</span>
+        </h1>
+
+        <p class="hero__lead reveal d5">
+          Deja atrás el ruido. Descubre rutas que despiertan cuando la ciudad
+          se apaga y encuentra la banda sonora de tu próxima escapada.
+        </p>
+
+        <div class="hero__actions reveal d6">
+          <button class="btn btn--primary" type="button" data-modal-open>
+            Comenzar el viaje
+            <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <a class="btn btn--ghost" href="#experiencia">
+            <svg class="icon icon--play" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="9.2" fill="none" stroke="currentColor" stroke-width="1.5" />
+              <path d="M10 8.6v6.8l5.4-3.4z" fill="currentColor" />
+            </svg>
+            Explorar la experiencia
+          </a>
+        </div>
+
+        <p class="hero__note reveal d7">Sin prisas. Sin rutas repetidas. Solo el siguiente horizonte.</p>
+      </div>
+
+      <!-- Panel ambiental -->
+      <div class="hero__panel reveal d8">
+        <div class="container hero__panel-grid">
+          <div class="panel-item">
+            <span class="panel-item__label">Ruta 001</span>
+            <span class="panel-item__value">Distrito del último sol</span>
+          </div>
+
+          <div class="panel-item">
+            <span class="panel-item__label">Ambiente</span>
+            <span class="panel-item__value">Asfalto mojado · Luces de neón</span>
+          </div>
+
+          <div class="panel-item panel-item--radio">
+            <button class="panel-item__radio-toggle" type="button" data-sound-toggle aria-pressed="false">
+              <span class="panel-item__label">La frecuencia</span>
+              <span class="panel-item__value">Midnight Signals — Neon Run Radio</span>
+              <span class="panel-item__meta">
+                <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                <span class="panel-item__hint">Pulsa para escuchar</span>
+              </span>
+            </button>
+          </div>
+
+          <a class="hero__scroll" href="#experiencia">
+            Explora la noche
+            <svg class="icon icon--down" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 4v14m-6-6l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== La experiencia ===== -->
+    <section class="section" id="experiencia" aria-labelledby="titulo-experiencia">
+      <div class="container section__inner">
+        <p class="section__eyebrow">01 · La experiencia</p>
+        <h2 class="section__quote" id="titulo-experiencia">
+          No se trata de llegar antes. Se trata de encontrar ese instante en el
+          que la ciudad, la música y el camino van al mismo ritmo.
+        </h2>
+      </div>
+    </section>
+
+    <!-- ===== Rutas ===== -->
+    <section class="section" id="rutas" aria-labelledby="titulo-rutas">
+      <div class="container section__inner">
+        <p class="section__eyebrow">02 · Rutas</p>
+        <h2 class="section__title" id="titulo-rutas">Tres rutas, tres estados de ánimo.</h2>
+
+        <ul class="cards">
+          <li class="card">
+            <span class="card__num">Ruta 002</span>
+            <h3 class="card__title">Distrito del último sol</h3>
+            <p class="card__text">
+              Rascacielos que aún guardan calor y avenidas donde el sol se
+              resiste a bajar. La ruta perfecta para abrir la noche sin urgencias.
+            </p>
+          </li>
+          <li class="card">
+            <span class="card__num">Ruta 003</span>
+            <h3 class="card__title">Anillo violeta</h3>
+            <p class="card__text">
+              Un circuito perimetral alrededor de la ciudad: curvas largas,
+              semáforos que nunca te detienen y el cielo tiñéndose de violeta.
+            </p>
+          </li>
+          <li class="card">
+            <span class="card__num">Ruta 004</span>
+            <h3 class="card__title">Costa de medianoche</h3>
+            <p class="card__text">
+              Carretera costera con el asfalto mojado por la brisa. Faros bajos,
+              ventanilla abierta y el mar marcando el compás.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== La frecuencia ===== -->
+    <section class="section" id="frecuencia" aria-labelledby="titulo-frecuencia">
+      <div class="container section__inner">
+        <p class="section__eyebrow">03 · La frecuencia</p>
+        <h2 class="section__quote" id="titulo-frecuencia">
+          Sintetizadores cálidos, bajos profundos y melodías para seguir un poco más.
+        </h2>
+        <p class="section__text">
+          Neon Run Radio estará disponible próximamente. Estamos afinando la
+          lista de reproducción para que cada ruta tenga su propia banda sonora.
+        </p>
+        <p class="chip">Próximamente</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 NEON RUN · Demo de práctica. Sin envío de datos.</p>
+    </div>
+  </footer>
+
+  <!-- ===== Botones flotantes ===== -->
+  <div class="floaters">
+    <button class="fab" id="btn-sonido" type="button" data-sound-toggle
+            aria-pressed="false" aria-label="Activar el sonido ambiente" title="Sonido ambiente">
+      <svg class="icon icon--sound-off" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor" />
+        <path d="M16.5 9.5l5 5m0-5l-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+      </svg>
+      <svg class="icon icon--sound-on" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor" />
+        <path d="M16.5 8.5a5 5 0 0 1 0 7M18.8 6.2a8.2 8.2 0 0 1 0 11.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+      </svg>
+    </button>
+
+    <button class="fab fab--top" id="btn-subir" type="button"
+            aria-label="Volver arriba" title="Volver arriba">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 20V5m-6 6l6-6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- ===== Modal de registro ===== -->
+  <dialog class="modal" id="modal-acceso" aria-labelledby="modal-titulo">
+    <div class="modal__body">
+      <button class="modal__close" type="button" data-modal-close aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <p class="modal__eyebrow">Acceso anticipado</p>
+      <h2 class="modal__title" id="modal-titulo">Tu próxima noche empieza aquí.</h2>
+      <p class="modal__text">Únete a la lista y entérate antes que nadie del lanzamiento de NEON RUN.</p>
+
+      <form class="modal__form" novalidate>
+        <label class="modal__label" for="campo-correo">Correo electrónico</label>
+        <input class="modal__input" type="email" id="campo-correo" name="correo"
+               placeholder="tu@correo.com" autocomplete="email" required />
+        <button class="btn btn--primary btn--block" type="submit">Quiero estar dentro</button>
+      </form>
+
+      <p class="modal__success" hidden role="status">
+        ¡Todo listo! Esta es una demostración: no hemos guardado ni enviado tu correo.
+      </p>
+
+      <p class="modal__note">Demo sin envío de datos. Tu correo no se guarda.</p>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
